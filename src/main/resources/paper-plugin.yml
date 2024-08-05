@@ -1,0 +1,11 @@
+name: ToneVeilCore
+version: '1.0'
+main: me.keksiz_.toneVeilCore.ToneVeilCore
+api-version: '1.21'
+authors: [ Keksiz_ ]
+description: ToneVeilCore
+commands:
+  vanish:
+    permission: toneveil.vanish
+    permission-message: You don't have permissions to execute this command.
+
