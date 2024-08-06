@@ -26,7 +26,7 @@ public class ChatCooldown implements Listener {
         if (chatCooldowns.containsKey(playerUUID)) {
             long lastChatTime = chatCooldowns.get(playerUUID);
             if ((currentTime - lastChatTime) < cooldownMillis) {
-                player.sendMessage(ChatColor.YELLOW + "Slow down on the chat messages, there's a" + ChatColor.RED + cooldownSeconds + " second delay.");
+                player.sendMessage(ChatColor.YELLOW + "Slow down on the chat messages, there's a " + ChatColor.RED + cooldownSeconds + " second delay.");
                 event.setCancelled(true);
                 return;
             }

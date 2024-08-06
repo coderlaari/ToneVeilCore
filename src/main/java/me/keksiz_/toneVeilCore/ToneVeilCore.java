@@ -1,5 +1,6 @@
 package me.keksiz_.toneVeilCore;
 
+import me.keksiz_.toneVeilCore.listeners.BadWordListener;
 import me.keksiz_.toneVeilCore.listeners.ChatCooldown;
 import me.keksiz_.toneVeilCore.listeners.PlayerJoin;
 import me.keksiz_.toneVeilCore.listeners.PlayerQuit;
@@ -18,6 +19,7 @@ public final class ToneVeilCore extends JavaPlugin {
         instance = this;
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new ChatCooldown(), this);
+        getServer().getPluginManager().registerEvents(new BadWordListener(), this);
     }
 
     @Override

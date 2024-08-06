@@ -8,4 +8,6 @@ commands:
   vanish:
     permission: toneveil.vanish
     permission-message: You don't have permissions to execute this command.
-
+permissions:
+  toneveil.vanish:
+    description: Allows to execute /vanish and become invisible
